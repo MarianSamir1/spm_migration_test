@@ -1,0 +1,98 @@
+name: spm_migration_test
+description: "A new Flutter project."
+
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.12.2
+
+dependencies:
+    # ============================================================
+    # DART ONLY
+    # No native iOS/Android code
+    # SPM: N/A
+    # ============================================================
+
+    bloc: ^9.2.1
+    flutter_bloc: ^9.1.1
+    flutter_screenutil: ^5.9.3
+    http: ^1.6.0
+    flutter_svg: ^2.3.0
+    linear_progress_bar: ^3.0.0
+    flutter_slidable: ^4.0.3
+    intl: ^0.20.3
+    dio: ^5.11.1
+    get: ^4.7.3
+
+    # DO NOT UPGRADE
+    # Dart-only package
+    # Kept at 5.0.1 because upgrading breaks the existing app
+    encrypt: 5.0.1
+
+    # ============================================================
+    # NATIVE - SPM SUPPORTED
+    # Native iOS code exists
+    # SPM: YES
+    # ============================================================
+    shared_preferences: ^2.5.5
+    url_launcher: ^6.3.2
+    fluttertoast: ^10.0.0
+    permission_handler: ^13.0.2
+    open_store: ^0.5.0
+    flutter_udid: ^4.1.6
+    package_info_plus: ^9.0.1 #to be compatible with aad_oauth: ^1.0.1
+    connectivity_plus: ^7.3.1
+    aad_oauth: ^1.0.1 # this will build Pod File because depend on flutter_secure_storage and it is SPM NOT SUPPORTED
+    #firebase and notification #Requires ios 15
+    firebase_core: ^4.15.0
+    firebase_messaging: ^16.7.0
+    flutter_local_notifications: ^22.3.1
+    google_sign_in: ^7.2.0
+    firebase_auth: ^6.7.0
+    #
+    qr_code_scanner_plus: ^2.3.0
+    sentry_flutter: ^10.0.0
+    #NFC Package
+    nfc_manager: ^4.2.1
+    nfc_manager_ndef: ^1.1.0
+
+    # ============================================================
+    # NATIVE - SPM NOT SUPPORTED
+    # Native iOS code exists
+    # SPM: NO
+    # ============================================================
+    flutter_secure_storage: ^9.2.4
+    google_mlkit_entity_extraction: ^0.17.1
+    google_mlkit_text_recognition: ^0.17.1
+
+
+
+    flutter:
+     sdk: flutter
+
+    cupertino_icons: ^2.0.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  flutter_lints: ^6.0.0
+
+flutter:
+
+  uses-material-design: true
+
+  # To add assets to your application, add an assets section, like this:
+  # assets:
+  #   - images/a_dot_burr.jpeg
+  #   - images/a_dot_ham.jpeg
+
+  # example:
+  # fonts:
+  #   - family: Schyler
+  #     fonts:
+  #       - asset: fonts/Schyler-Regular.ttf
+  #       - asset: fonts/Schyler-Italic.ttf
+  #         style: italic
