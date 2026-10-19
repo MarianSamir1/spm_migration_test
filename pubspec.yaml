@@ -46,11 +46,13 @@ dependencies:
     connectivity_plus: ^7.3.1
     aad_oauth: ^1.0.1 # this will build Pod File because depend on flutter_secure_storage and it is SPM NOT SUPPORTED
     #firebase and notification #Requires ios 15
-    firebase_core: ^4.15.0
-    firebase_messaging: ^16.7.0
-    flutter_local_notifications: ^22.3.1
     google_sign_in: ^7.2.0
     firebase_auth: ^6.7.0
+    firebase_analytics: ^12.6.0
+    firebase_messaging: ^16.7.0
+    firebase_core: ^4.15.0
+    firebase_crashlytics: ^5.4.0
+    flutter_local_notifications: ^22.3.1
     #
     qr_code_scanner_plus: ^2.3.0
     sentry_flutter: ^10.0.0
